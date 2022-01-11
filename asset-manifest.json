@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/chittatosh-react-video-app/static/css/main.4e52df58.css",
+    "main.js": "/chittatosh-react-video-app/static/js/main.9cd200eb.js",
+    "static/js/787.27930a43.chunk.js": "/chittatosh-react-video-app/static/js/787.27930a43.chunk.js",
+    "index.html": "/chittatosh-react-video-app/index.html",
+    "main.4e52df58.css.map": "/chittatosh-react-video-app/static/css/main.4e52df58.css.map",
+    "main.9cd200eb.js.map": "/chittatosh-react-video-app/static/js/main.9cd200eb.js.map",
+    "787.27930a43.chunk.js.map": "/chittatosh-react-video-app/static/js/787.27930a43.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e52df58.css",
+    "static/js/main.9cd200eb.js"
+  ]
+}
