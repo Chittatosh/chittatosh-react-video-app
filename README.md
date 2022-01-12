@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# React Video App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How to run this app
 
-In the project directory, you can run:
+Download the zip from https://github.com/Chittatosh/chittatosh-react-video-app.git and extract it,\
+or git clone this repo from terminal:
+```bash
+git clone https://github.com/Chittatosh/chittatosh-react-video-app.git
+```
+cd into the directory containing the package.json file:
+```bash
+cd chittatosh-react-video-app
+```
+Install the required npm packages:
+```bash
+npm install
+```
+Start the app:
+```bash
+npm start
+```
+The app will open in browser at http://localhost:3000/.
+Enter any YouTube URL on screen 1 to view the YouTube video on screen 2. Click the Back button on screen 2 to return to screen 1.
 
-### `npm start`
+## Types of supported URL
+<ol>
+  <li>https://youtu.be/Tzar-VhZzUc</li>
+  <li>https://www.youtube.com/watch?v=Tzar-VhZzUc</li>
+  <li>https://www.youtube.com/embed/Tzar-VhZzUc</li>
+  <li>http://www.youtube.com/v/Tzar-VhZzUc</li>
+</ol>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployment
+This app is deployed on https://chittatosh.github.io/chittatosh-react-video-app/.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# UI
+Screen 1
+![Screen 1](Screen1.png "Screen 1")
+Screen 2
+![Screen 2](Screen2.png "Screen 2")
+"Please enter a valid YouTube URL" will appear on screen 1 as seen below if the user enters an invalid URL:
+![Screen 3](Screen3.png "Screen 3")
+Playback on other websites may be disabled by the video owner for some videos as seen below:
+![Screen 4](Screen4.png "Screen 4")
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# React components
+This react app contains App as the top level stateful component. The App components contains two sub-components: UrlForm which is a stateful component for taking YouTube URL as input from the user on screen 1 and VideoPlayer which is a stateless component for showing the YouTube video on screen 2. Both UrlForm and VideoPlayer components use the common Button component for the Submit button on screen 1 and the Back button on screen 2 respectively.
